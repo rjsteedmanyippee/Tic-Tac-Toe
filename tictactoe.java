@@ -25,8 +25,6 @@ class ticky {
         board[i-1]=s;
     }
     static void checkGameOver() {
-        // Check rows, columns, diagonals for a win
-        // Check for a draw
         for (int i = 0; i < 3; i++) {
             if (board[i].equals(board[i+3]) && board[i].equals(board[i+6]) && !board[i].equals(" ")) {
                 System.out.println(board[i] + " wins!"); return; } 
